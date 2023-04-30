@@ -111,7 +111,7 @@ def non_cont_rastrigin(
     rotation: Optional[np.ndarray] = None,
 ) -> np.ndarray:
     # a special case; we need the shift vector and rotation matrix
-    nx = x.shape[0]
+    nx = x.shape[1]
     if shift is None:
         shift = np.zeros((1, nx))
     else:
