@@ -8,8 +8,8 @@ from cec_prob import CECProb
 problems = [CECProb(10, 9)]
 results_str = ""
 pop_size = 20
-exec_num = 5
-budget = 10000 / pop_size
+exec_num = 51
+budget = int(10000 / pop_size)
 
 #itera os índices dos problemas
 for p in range(3, 5):
@@ -22,11 +22,11 @@ for p in range(3, 5):
 
         #número de repetições de cada experimento: 51
         for i in range(exec_num):
-            algo = algorithm(de(gen=budget*d, F=0.8, CR=0.9, variant=2, ftol=1e-6, xtol=1e-6))
+            algo = algorithm(de(gen=budget*d, F=0.8, CR=0.9, variant=2, ftol=1e-06, xtol=1e-06))
             #todo: verificar por que colocar a mesma seed não está gerando o mesmo resultado
             # para o mesmo problema
             algo.set_seed(0)
-            algo.set_verbosity(100)
+            algo.set_verbosity(0)
             prob = problem(CECProb(d, p))
             pop = population(prob, pop_size)
             pop = algo.evolve(pop)
