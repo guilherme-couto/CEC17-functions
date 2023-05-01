@@ -17,7 +17,7 @@ with open('result.csv') as f:
         cases[prob_number][dim].append(float(value))
 
 # Calculate infos
-with open('infos.csv', 'w') as f:
+with open('infos.csv', 'a') as f:
     csv_writer = csv.writer(f, delimiter='\t')
     # melhor, mediana, média, desvio padrão, pior
     csv_writer.writerow(['prob_number', 'dim', 'best', 'median', 'mean', 'std', 'worst'])
