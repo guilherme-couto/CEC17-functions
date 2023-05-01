@@ -76,7 +76,7 @@ def f3(x, rotation=None, shift=None):
     if shift is None:
         shift = transforms.shifts[2][:nx]
     x_transformed = transforms.shift_rotate(x, shift, rotation)
-    return basic.zakharov(x_transformed) + 300.0
+    return basic.zakharov(x_transformed) + 200.0
 
 
 def f4(x, rotation=None, shift=None):
@@ -98,7 +98,7 @@ def f4(x, rotation=None, shift=None):
     if shift is None:
         shift = transforms.shifts[3][:nx]
     x_transformed = transforms.shift_rotate(x, shift, rotation)
-    return basic.rosenbrock(x_transformed) + 400.0
+    return basic.rosenbrock(x_transformed) + 300.0
 
 
 def f5(x, rotation=None, shift=None):
@@ -120,7 +120,7 @@ def f5(x, rotation=None, shift=None):
     if shift is None:
         shift = transforms.shifts[4][:nx]
     x_transformed = transforms.shift_rotate(x, shift, rotation)
-    return basic.rastrigin(x_transformed) + 500.0
+    return basic.rastrigin(x_transformed) + 400.0
 
 
 def f6(x, rotation=None, shift=None):
@@ -142,7 +142,7 @@ def f6(x, rotation=None, shift=None):
     if shift is None:
         shift = transforms.shifts[5][:nx]
     x_transformed = transforms.shift_rotate(x, shift, rotation)
-    return basic.schaffers_f7(x_transformed) + 600.0
+    return basic.schaffers_f7(x_transformed) + 500.0
 
 
 def f7(x, rotation=None, shift=None):
@@ -164,7 +164,7 @@ def f7(x, rotation=None, shift=None):
     if shift is None:
         shift = transforms.shifts[6][:nx]
     # pass the shift and rotation directly to the function
-    return basic.lunacek_bi_rastrigin(x, shift, rotation) + 700.0
+    return basic.lunacek_bi_rastrigin(x, shift, rotation) + 600.0
 
 
 def f8(x, rotation=None, shift=None):
@@ -186,7 +186,7 @@ def f8(x, rotation=None, shift=None):
     if shift is None:
         shift = transforms.shifts[7][:nx]
     # pass the shift and rotation directly to the function
-    return basic.non_cont_rastrigin(x, shift, rotation) + 800.0
+    return basic.non_cont_rastrigin(x, shift, rotation) + 700.0
 
 
 def f9(x, rotation=None, shift=None):
@@ -208,7 +208,7 @@ def f9(x, rotation=None, shift=None):
     if shift is None:
         shift = transforms.shifts[8][:nx]
     x_transformed = transforms.shift_rotate(x, shift, rotation)
-    return basic.levy(x_transformed) + 900.0
+    return basic.levy(x_transformed) + 800.0
 
 
 def f10(x, rotation=None, shift=None):
@@ -230,7 +230,7 @@ def f10(x, rotation=None, shift=None):
     if shift is None:
         shift = transforms.shifts[9][:nx]
     x_transformed = transforms.shift_rotate(x, shift, rotation)
-    return basic.modified_schwefel(x_transformed) + 1000.0
+    return basic.modified_schwefel(x_transformed) + 900.0
 
 
 all_functions = [

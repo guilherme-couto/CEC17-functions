@@ -13,7 +13,7 @@ def main():
     budget = int(10000 / pop_size)
 
     #itera os índices dos problemas
-    for p in range(3, 5):
+    for p in range(5, 6):
         start = time.time()
         print(f"Problem: {p}. D:", end="", flush=True)
 
